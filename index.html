@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michał Daniel | Trener Personalny & Dietetyk</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+  <meta name="description" content="Profesjonalne plany treningowe i żywieniowe dopasowane do Twoich celów. Trener personalny i kulturysta." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { 50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 900: '#1e3a8a' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #FAFAFA; background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px), linear-gradient(to bottom, #f0f0f0 1px, transparent 1px); background-size: 40px 40px; }
+    .bento-card { background: white; border-radius: 1.5rem; border: 1px solid #f3f4f6; box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03); transition: transform 0.2s ease, box-shadow 0.2s ease; overflow: hidden; }
+    .bento-card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -4px rgba(0, 0, 0, 0.08); }
+  </style>
+</head>
+<body class="text-slate-900 antialiased font-sans">
+  <!-- NAVBAR -->
+  <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-6 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <div class="flex items-center gap-2.5">
+        <img src="logo.jpg" alt="Logo" class="w-8 h-8 rounded-lg object-contain shadow-sm bg-white" onerror="this.outerHTML='<div class=\'w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center text-white font-black text-sm shadow-sm\'>M</div>'">
+        <span class="font-extrabold text-sm tracking-wide">MICHAŁ DANIEL</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-green-50 border border-green-200">
+        <div class="w-2 h-2 rounded-full bg-green-500"></div><span class="text-xs font-semibold text-green-700">Dostępny</span>
+      </div>
+    </div>
+    <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-500">
+      <a href="#cennik" class="hover:text-slate-900 transition-colors">Usługi</a>
+      <a href="#kontakt" class="hover:text-slate-900 transition-colors">Kontakt</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="#cennik" class="bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition-colors shadow-sm">Zatrudnij mnie</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-50 border border-brand-100 text-brand-600 text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-8">
+      <div class="w-1.5 h-1.5 rounded-full bg-brand-500"></div>
+      Dostępny na nowe wyzwania
+    </div>
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-slate-900 mb-6 leading-tight">
+      MICHAŁ DANIEL — <span class="text-brand-600">TRENER PERSONALNY</span> & DIETETYK
+    </h1>
+    <p class="text-slate-500 text-base sm:text-lg max-w-2xl mx-auto font-medium leading-relaxed">
+      Układam wydajne plany treningowe i buduję zdrowe nawyki żywieniowe. Krok po kroku poprowadzę Cię do Twojej wymarzonej sylwetki.
+    </p>
+  </section>
+
+  <!-- BENTO GRID CONTENT -->
+  <section id="cennik" class="max-w-6xl mx-auto px-4 sm:px-6 pb-32">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      
+      <!-- PLAN ŻYWIENIOWY -->
+      <div class="bento-card flex flex-col justify-between">
+        <img src="plan-zywieniowy.jpg" alt="Plan Żywieniowy" class="w-full h-48 object-cover bg-slate-200">
+        <div class="p-6 sm:p-8 flex-1 flex flex-col">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="font-extrabold text-xl">Plan Żywieniowy</h3>
+            <span class="font-black text-2xl">175 zł</span>
+          </div>
+          <p class="text-sm text-slate-500 mb-6 font-medium">Rozpisanie przez dietetyka. Dostosowanie do chorób (Hashimoto, insulinooporność, anemia, PCOS).</p>
+          <ul class="text-xs text-slate-500 space-y-2 mb-8 font-medium">
+            <li class="flex gap-2"><span>&bull;</span> 4 tyg. dostępu do aplikacji</li>
+            <li class="flex gap-2"><span>&bull;</span> Baza ponad 7000 posiłków</li>
+            <li class="flex gap-2"><span>&bull;</span> Gotowa lista zakupów</li>
+          </ul>
+          <a href="" class="bg-slate-100 text-slate-700 w-full py-2.5 rounded-xl text-sm font-bold text-center hover:bg-slate-200 transition-colors block mt-auto">Wybieram</a>
+        </div>
+      </div>
+
+      <!-- KARTA 2: PROFIL (ŚRODEK) -->
+      <div id="kontakt" class="bento-card p-6 sm:p-8 flex flex-col items-center text-center">
+        <!-- Zdjecie -->
+        <div class="w-24 h-24 rounded-full bg-slate-200 mb-4 overflow-hidden border-4 border-white shadow-md relative">
+          <img src="profile.jpg" alt="Michał Daniel" class="w-full h-full object-cover">
+          <div class="absolute bottom-1 right-1 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></div>
+        </div>
+        <p class="text-xs text-slate-400 font-bold uppercase tracking-wider mb-1">@xmichaldaniel</p>
+        <h3 class="font-black text-2xl mb-1">Michał <span class="text-brand-600">Daniel</span></h3>
+        <p class="text-sm text-slate-500 font-medium mb-8">Trener Personalny & Kulturysta</p>
+        
+        <div class="w-full space-y-3">
+          <a href="mailto:michal97.daniel@gmail.com" class="flex items-center justify-between p-4 rounded-2xl border border-slate-100 hover:border-brand-200 hover:bg-brand-50 transition-colors group cursor-pointer">
+            <div class="flex items-center gap-3 text-slate-600 group-hover:text-brand-600">
+              <div class="w-8 h-8 rounded-lg bg-slate-100 group-hover:bg-brand-100 flex items-center justify-center transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <span class="text-sm font-bold">Napisz e-mail</span>
+            </div>
+            <span class="text-slate-300 group-hover:text-brand-400">&rarr;</span>
+          </a>
+          
+          <a href="https://instagram.com/xmichaldaniel" target="_blank" class="flex items-center justify-between p-4 rounded-2xl border border-slate-100 hover:border-brand-200 hover:bg-brand-50 transition-colors group cursor-pointer">
+            <div class="flex items-center gap-3 text-slate-600 group-hover:text-brand-600">
+              <div class="w-8 h-8 rounded-lg bg-slate-100 group-hover:bg-brand-100 flex items-center justify-center transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+              </div>
+              <span class="text-sm font-bold">Instagram</span>
+            </div>
+            <span class="text-slate-300 group-hover:text-brand-400">&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- PLAN TRENINGOWY -->
+      <div class="bento-card flex flex-col justify-between">
+        <img src="plan-treningowy.jpg" alt="Plan Treningowy" class="w-full h-48 object-cover bg-slate-200">
+        <div class="p-6 sm:p-8 flex-1 flex flex-col">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="font-extrabold text-xl">Plan Treningowy</h3>
+            <span class="font-black text-2xl">225 zł</span>
+          </div>
+          <p class="text-sm text-slate-500 mb-6 font-medium">Indywidualny plan z kwestionariusza. Przygotowanie do testów sprawnościowych i uwzględnienie problemów zdrowotnych.</p>
+          <ul class="text-xs text-slate-500 space-y-2 mb-8 font-medium">
+            <li class="flex gap-2 text-brand-600 font-bold"><span>&bull;</span> Kontynuacja: 150 zł</li>
+            <li class="flex gap-2"><span>&bull;</span> Korekta techniki na podst. nagrań</li>
+          </ul>
+          <a href="" class="bg-slate-100 text-slate-700 w-full py-2.5 rounded-xl text-sm font-bold text-center hover:bg-slate-200 transition-colors block mt-auto">Wybieram</a>
+        </div>
+      </div>
+
+      <!-- PAKIET COMBO (Span 2) -->
+      <div class="bento-card lg:col-span-2 flex flex-col sm:flex-row bg-brand-600 text-white border-transparent shadow-lg relative overflow-hidden">
+        <img src="plan-combo.jpg" alt="Trening + Żywienie" class="w-full sm:w-1/2 h-48 sm:h-auto object-cover bg-brand-700">
+        <div class="p-6 sm:p-8 flex flex-col justify-center flex-1 z-10 bg-brand-600">
+          <div class="inline-block px-3 py-1 bg-white/20 text-white text-[10px] font-bold uppercase tracking-widest rounded-md mb-4 self-start">Najlepsza Wartość</div>
+          <h3 class="font-extrabold text-2xl mb-2">Trening + Żywienie (Combo)</h3>
+          <p class="text-brand-100 text-sm font-medium leading-relaxed mb-6">
+            Pełny plan żywieniowy od dietetyka + indywidualny plan treningowy. Dostosowanie do chorób. 4-tyg dostęp do aplikacji. Połączenie obu pakietów dla max. efektów.
+          </p>
+          <div class="flex items-center gap-6 mt-auto">
+            <div>
+              <span class="block font-black text-4xl mb-1">350 zł</span>
+              <span class="block text-brand-200 text-xs font-bold uppercase tracking-widest">Zamiast 400 zł</span>
+            </div>
+            <a href="" class="px-8 py-3 bg-white text-brand-600 rounded-xl text-sm font-extrabold hover:bg-brand-50 transition-colors inline-block shadow-sm">
+              Wybieram Combo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ONLINE (Dark Card) -->
+      <div class="bento-card bg-slate-900 text-white border-transparent flex flex-col">
+        <img src="plan-online.jpg" alt="Współpraca Online" class="w-full h-40 object-cover bg-slate-800">
+        <div class="p-6 sm:p-8 flex flex-col flex-1 justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-6">
+              <div class="flex flex-col">
+                 <span class="text-brand-400 text-[10px] font-mono font-bold tracking-wider mb-1 uppercase">// full support</span>
+                 <h3 class="font-extrabold text-xl">Współpraca Online</h3>
+              </div>
+              <span class="font-black text-3xl">500<span class="text-sm text-slate-400 font-medium ml-1">zł</span></span>
+            </div>
+            <p class="text-sm text-slate-400 mb-6 font-medium leading-relaxed">
+              Kompleksowe wsparcie (np. start w zawodach). Plan treningowy + Indywidualna dieta.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2 mb-8 font-medium">
+              <li class="flex gap-2"><span>&bull;</span> Stały kontakt 7 dni w tygodniu</li>
+              <li class="flex gap-2"><span>&bull;</span> Cotygodniowe raporty i zmiany</li>
+            </ul>
+          </div>
+          <a href="" class="bg-brand-600 text-white w-full py-3 rounded-xl text-sm font-bold text-center hover:bg-brand-500 transition-colors block">
+            Zatrudnij mnie
+          </a>
+        </div>
+      </div>
+
+    </div> <!-- /grid -->
+  </section>
+</body>
+</html>
